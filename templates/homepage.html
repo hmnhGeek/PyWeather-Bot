@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+<title> PyWeather Bot </title>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+
+<body bgcolor="gray">
+	<CENTER> <h1>Welcome to PyWeather Bot</h1></CENTER>
+	<center>
+		PyWeather is weather bot created in Python and Flask and it works alongwith online weather APIs. It is made by Himanshu Sharma.
+		It works in a simple way. You just need to tell it how you will input a city. Whether 
+		by its name, pincode, latitude or longitude. After ticking that, you will be taken 
+		to a new page where you can type that respective information and click submit. In no time
+		the bot will return you the weather of that city. So don't wait, click any of the options below.
+		<br>
+		<br>
+		<form action="http://127.0.0.1:5000/data_page" method="POST" enctype = "multipart/form-data">
+			<input type="radio" name="options" value="name"> By City Name </input><br>
+			<input type="radio" name="options" value="pin"> By Pincode </input><br>
+			<input type="radio" name="options" value="Coordinates"> By Geo Coordinates </input><br><br>
+			<input type = "submit"/>
+		</form>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href = "http://www.twitter.com/hmnhgeek"> Follow or Message Himanshu Sharma </a>
+	</center>
+</body>
+</html>

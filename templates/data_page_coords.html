@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+<title> PyWeather Bot </title>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+
+<body bgcolor="gray">
+	<CENTER> <h1>Welcome to PyWeather Bot</h1></CENTER>
+	<center>
+		Please enter the ticked information below.<br>
+		If you are entering by pin code, enter like this: pincode, country_code (eg: for India it is in or IN)<br>
+		If you are entering by coordinates, enter like this: latitude, longitude
+		<br>
+		<br>
+		<form action="http://127.0.0.1:5000/city_results" method="POST" enctype = "multipart/form-data">
+			Enter Coordinates <input type="text" name="info"><br><br>
+			<input type="radio" name="units" value="F"> Temperature in Fahrenheit </input><br>
+			<input type="radio" name="units" value="C"> Temperature in Celsius </input><br>
+			<input type="radio" name="units" value="K"> Temperature in Kelvin </input><br><br>
+			<input type = "submit"/>
+			<br>
+			<br>
+			Do not remember what you selected?? Why not <a href = "http://127.0.0.1:5000/">go back</a> and select again!!
+		</form>
+	</center>
+</body>
+</html>

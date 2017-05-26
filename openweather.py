@@ -1,6 +1,6 @@
 import json, urllib2, htmlify
 
-APP_ID = "a453aba51ddf22fa57d0973144ce1e41"
+APP_ID = ""
 
 def city(name, by = None, units = 'K'):
 

@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import openweather as opw
 
 app = Flask(__name__)
-APP_ID = "a453aba51ddf22fa57d0973144ce1e41"
+APP_ID = ""
 
 @app.route('/')
 def home():

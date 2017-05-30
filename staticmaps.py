@@ -1,5 +1,5 @@
 
-API_KEY = "AIzaSyDwwLrlJDaqCtQa2CMBKtWOC6IkYli_vl4"
+API_KEY = ""
 
 def convertforurl(string):
 
